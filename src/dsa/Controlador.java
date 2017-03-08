@@ -27,7 +27,6 @@ public class Controlador {
     }
     public boolean Borrar (Integer i)
     {
-
         if(pokedex.remove(i)!=null){
             identificador--;
             return true;
@@ -37,7 +36,7 @@ public class Controlador {
     }
     public List<Eetacemon> listar()
     {
-        List<Eetacemon> e=new ArrayList<>();
+        List<Eetacemon> e=new ArrayList<Eetacemon>();
         for (int i = 0; i< pokedex.size(); i++){
             e.add(pokedex.get(i));
         }
